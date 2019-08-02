@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1447945115 source:/home/sedat/KTU_OOP/OOP_examples/copyConstructor/main.cpp
+	<iostream>
+	"pointerClass.h"
+
+1447945269 /home/sedat/KTU_OOP/OOP_examples/copyConstructor/include/pointerClass.h
+
+1447945233 source:/home/sedat/KTU_OOP/OOP_examples/copyConstructor/src/pointerClass.cpp
+	"pointerClass.h"
+	<iostream>
+

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1480088995 source:/home/sedat/KTU_OOP/ktu_oop_homeworks/opOver/main.cpp
+	<iostream>
+	"opOverClass.h"
+
+1480088934 /home/sedat/KTU_OOP/ktu_oop_homeworks/opOver/opOverClass.h
+
+1480088967 source:/home/sedat/KTU_OOP/ktu_oop_homeworks/opOver/opOverClass.cpp
+	"opOverClass.h"
+

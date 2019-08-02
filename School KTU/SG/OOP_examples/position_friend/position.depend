@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1309166152 source:d:\video kursy en\c++\40. constant classes and methods\position\position.cpp
+	"position.h"
+	<iostream>
+
+1309166152 
+
+1309166147 d:\video kursy en\c++\40. constant classes and methods\position\position.h
+
+1309166152 source:d:\video kursy en\c++\41. friend functions\position\position.cpp
+	"position.h"
+	<iostream>
+
+1309252276 d:\video kursy en\c++\41. friend functions\position\position.h
+
+1309252094 source:d:\video kursy en\c++\41. friend functions\position\main.cpp
+	<iostream>
+	"position.h"
+
+1309252094 h"
+
+1309248682 source:/home/sedat/KTU_OOP/OOP_examples/position/main.cpp
+	<iostream>
+	"position.h"
+
+1309248676 /home/sedat/KTU_OOP/OOP_examples/position/position.h
+
+1309162552 source:/home/sedat/KTU_OOP/OOP_examples/position/position.cpp
+	"position.h"
+	<iostream>
+

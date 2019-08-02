@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1448824847 source:/home/sedat/KTU_OOP/OOP_examples/personType/main.cpp
+	<iostream>
+	"personType.h"
+
+1448824718 /home/sedat/KTU_OOP/OOP_examples/personType/include/personType.h
+	<iostream>
+	<string>
+
+1448824786 source:/home/sedat/KTU_OOP/OOP_examples/personType/src/personType.cpp
+	"personType.h"
+

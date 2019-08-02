@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1447780187 source:/home/sedat/KTU_OOP/OOP_examples/addressOfOperator/main.cpp
+	<iostream>
+	"testAdd.h"
+
+1447780201 /home/sedat/KTU_OOP/OOP_examples/addressOfOperator/include/testAdd.h
+
+1447780195 source:/home/sedat/KTU_OOP/OOP_examples/addressOfOperator/src/testAdd.cpp
+	<iostream>
+	"testAdd.h"
+

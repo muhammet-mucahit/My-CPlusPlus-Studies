@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1448825563 source:/home/sedat/KTU_OOP/OOP_examples/friendFunctions/main.cpp
+	<iostream>
+	"frienFunctionExample.h"
+
+1448825843 source:/home/sedat/KTU_OOP/OOP_examples/friendFunctions/src/frienFunctionExample.cpp
+	"frienFunctionExample.h"
+
+1448825397 /home/sedat/KTU_OOP/OOP_examples/friendFunctions/include/frienFunctionExample.h
+	<iostream>
+	<string>
+

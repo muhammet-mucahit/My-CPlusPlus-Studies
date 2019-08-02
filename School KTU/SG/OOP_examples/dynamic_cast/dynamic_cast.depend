@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1450856690 source:/home/sedat/KTU_OOP/OOP_examples/dynamic_cast/main.cpp
+	<iostream>
+	<typeinfo>
+	"dynamic_cast_class.h"
+
+1450855914 /home/sedat/KTU_OOP/OOP_examples/dynamic_cast/include/dynamic_cast_class.h
+	<stdlib.h>
+
+1450855791 source:/home/sedat/KTU_OOP/OOP_examples/dynamic_cast/src/dynamic_cast_class.cpp
+	"dynamic_cast_class.h"
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1447500104 source:/home/sedat/KTU_OOP/OOP_examples/dynamicVariables/dynamicVariables.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+

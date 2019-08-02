@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1447778149 source:/home/sedat/KTU_OOP/OOP_examples/virtualFunctions_B/src/baseClass.cpp
+	<iostream>
+	"baseClass.h"
+
+1447778214 /home/sedat/KTU_OOP/OOP_examples/virtualFunctions_B/include/baseClass.h
+
+1447778181 source:/home/sedat/KTU_OOP/OOP_examples/virtualFunctions_B/src/derivedClass.cpp
+	<iostream>
+	"derivedClass.h"
+
+1447778194 /home/sedat/KTU_OOP/OOP_examples/virtualFunctions_B/include/derivedClass.h
+	"baseClass.h"
+

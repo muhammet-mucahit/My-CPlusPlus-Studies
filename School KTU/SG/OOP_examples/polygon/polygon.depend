@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1448572327 source:/home/sedat/KTU_OOP/OOP_examples/polygon/main.cpp
+	<iostream>
+	<triangle.h>
+	<rectangle.h>
+
+1448571798 /home/sedat/KTU_OOP/OOP_examples/polygon/include/triangle.h
+	<polygon.h>
+
+1448571971 /home/sedat/KTU_OOP/OOP_examples/polygon/include/polygon.h
+
+1448571843 /home/sedat/KTU_OOP/OOP_examples/polygon/include/rectangle.h
+	<polygon.h>
+
+1448572162 source:/home/sedat/KTU_OOP/OOP_examples/polygon/src/polygon.cpp
+	<iostream>
+	"polygon.h"
+
+1448571854 source:/home/sedat/KTU_OOP/OOP_examples/polygon/src/rectangle.cpp
+	"rectangle.h"
+	"string.h"
+
+1448571815 source:/home/sedat/KTU_OOP/OOP_examples/polygon/src/triangle.cpp
+	"triangle.h"
+	"string.h"
+

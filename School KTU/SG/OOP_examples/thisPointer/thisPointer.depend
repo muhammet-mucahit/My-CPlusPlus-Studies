@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1448822028 source:/home/sedat/KTU_OOP/OOP_examples/thisPointer/main.cpp
+	<iostream>
+	"thisClass.h"
+
+1448822062 /home/sedat/KTU_OOP/OOP_examples/thisPointer/include/thisClass.h
+
+1448822091 source:/home/sedat/KTU_OOP/OOP_examples/thisPointer/src/thisClass.cpp
+	"thisClass.h"
+	<iostream>
+

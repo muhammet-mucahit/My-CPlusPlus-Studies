@@ -1,0 +1,325 @@
+bool flag=true;
+          false ( iki deðer alýr)
+if(flag){...} þeklinde yazýlabilir
+bool bellekte 1byte(8-bit) yer kaplar-çünkü bir bite bellekte ulaþamayýz-
+
+
+char a='a'; == a=65;-ASCII-
+floot 4 byte -bellek alaný önemliyse-
+double 8 byte -hassasiyet önemliyse-
+TÝP DÖNÜÞÜMLERÝ
+static_cast<int>(7.9)=7
+             ^istenilen tip yazýlýr
+static_cast<int>(7.8)+static_cast<double>(15/2)=static_cast<int>(7.8+7.0)=14
+
+c type cast -> (int)(7.8)=7 -IDElerde bu kabul edilir ama c++de bu yok-
+
+const bir kere atama yapabilirsin
+
+cin>>miles;
+input için -miles'a deðer okudu-
+BÝR STRING ÝÇÝNDE "'\ KULLANMAK ÝÇÝN \"\'\\ KULLANMAK GEREKÝR
+---------------------------------29.09-----------------------------------
+iostream--->input output stream SeemsGood
+char ch;
+int a;
+double z;
+cin>>a>>ch>>z ---->57A26.9 ------->	a=57, ch='A'; z=26.9 
+okumada okunan tipe uygun olmayan bir girdi gelirse tab/enter/space görmüþ gibi davranýr.
+
+cin.get fonksiyonu " "(boþluðu) okur
+cin>> fonksiyonu okumaz
+cin.ignore(intExp,charExp); verilen argümanlara kdar ingore eder(?)
+ch=cin.peek(); okur ama cursor hareket etmez
+cin.putback(); var(?)
+pow fonksiyonunu kullanmamaya çalýþalýmmýþ-fazla kapsamlý- dereceler yüksekse ya da derece
+bilinmiyorsa kullan kare için kullama.
+input fail olursa ondan sonra yapýlan bütün iþlemler geçersiz olur ve içinde kalan verilerle
+yoluna devam eder.
+cin.clear(); var (?) 
+cin.flush(); bufferýn dolmasýný beklemez iþi yapmaya zorlar-bufferýn sifonunu çeker-
+satýrý okumak için getline fonksiyonu kullanýlýr
+newline görene kadar okur
+FILE I/O
+1)#include <fstream>
+2)ifstream Data;cin
+  ofsteam Data;cout yerine
+3)Data.open("orn.txt",ios::app -açýlýþ modu,yazmazsan default modda açýlýr-);
+4)cout yazmýyoruz-----> Data<<a;
+5)data.close(); dosyayý kapat
+-----------------------------------05.10--------------------------------
+ios::binary modu açýp görmek deðil dosyanýn içi ve boyutu öneli ise bu mod kullanýlýr
+textte açarsan saçma sapan þeyler çýkabilir 
+açýcaksan kullan zaten 
+birden fazla mod için ---> ios::binary | ios::trunc
+ÖDEV!! -->seekg, seekp bularý bil?
+       -->write ve read i araþtýr piazza ya da diðer ders anlatýlacak.
+-------------------------------------06.10---------------------------------------------
+:: ----> SCOPE RESULATION OPERATOR
+t --> localdeki deðiken
+::t -->globaldeki deðiþken
+exp::t-->namespacedeki deðiþken 
+bu yazma þekli çakýþma olduðu zaman yapýlýr
+-----------------------------------12.10---------------------------------------
+9/10/11. chapterlarý geçtik
+string str = "yaz.txt";
+string str = "oku.txt";
+ifstream dosya(str); //illegal
+ofstream dosya2;
+dosya2.open(str2); // illegal
+	     ^C string olmalý
+dosya2.open(str2.c_str());
+	     ^C stringe dönüþtürdü
+string classlarý parametre olarak verilemeyebilir 
+
+class className7{
+	int a;
+	double i;
+	void yazdir(string s);
+};
+class içindeki fonksiyon classdaki deðiþkeni local gibi kullanabilir içine parametre olarak verirsen
+sýnavda "class kavramý anlaþýlmamýþ" diye çizilir LUL
+nesne içinde doðrudan ihtiyaç olmayan fonksiyonlar private yapýlýr
+fonksiyon sonundaki const o fonk.un claasdaki deðerlere eriþebileceðini 
+ama deðiþtiremeyeceðini belirtir
+isEqual(A,B); true ya da false // legal ama tercih edilmez oopde
+A.isEqual(B); bu tercüh edilir //sondaki const Anýn deðerlerini deðiþtirtmez 
+Bnin deðiþmemesi için;
+bool isEqual(const something)const; olmalý
+referans olarak tanýmlamak hýz ve bellek acýsýndan daha iyi
+void
+----------------------------------------13.10--------------------------------------
+classlarda default private 
+deðiþkenleri private kullanmaya özen göster
+clocktype ornek(9,10,0);
+	  ornek(9,10);  //illegal
+clocktype ornek2(); //illegal
+clocktype ornek; //default constructor çaðýrýlýr
+
+dinamik oluþturduysak destructor gerekli yoksa program sonuna kadar bellekte yer kaplar
+parametre almazlar
+~classismi();
+olarak yazýlýr
+-----------------------------------------19.10-----------------------------------
+ADT soyut gösterim
+domain classda üye deðiþkenler
+operations classda üye fonksiyon
+type name classda ismi iþte
+programcý? tasrým? komut ekraný SeemsGood
+class listType{
+	int dizi[1000];
+	int length;
+	public:
+	bool isEmpty();
+	bool isFull();
+	int search(int );
+	void remove(int );
+	void insert(int );
+	void sort();
+	void destroy();
+	void print()const;
+	listType();
+}	
+
+
+class headerda açýklamalara tanýmlanýt
+implement cpp  uzantýlý class fonksiyonlarýný içeririr
+main için ayrý cpp bütün headerlarý içerir
+her class için ayrý yapýlýr
+----------------------------------------20.10------------------------------------------
+kapsüllemeyi bil class {kapsüle alýr 4Head}
+inheritance ---> is a relationship
+composition ---> has a relationship
+partTimeEmployee bir personType olduðu için sýfýrdan
+partTimeEmployee oluþturulmaz, personType miras alýnýr
+bir sýnýf birden çok sýnýftan miras alýyorsa multiple inheritance
+miras alan sýnýf miras alýnýrsa multi-level inheritance
+
+ogr ---single heritance--->master_ogr ---multi-level inheritance---> tezli_master_ogr
+                                   Î
+calisan ----multiple inheritance---|
+
+miras : ile yapýlýr :: deðil
+
+1-)temel sýnýfýn private üyeleri sadece temel(base) class tarafýndan eriþilebilir,
+türetilmiþ(derived) class eriþemez
+2-)temel sýnýfýn public üyeleri eriþilebilir public yolla alýnýrsa public private ile alýnýrsa
+derived classýn private üyesi olarak kullanýlýr
+3-)derived calssýn ek üyeleri olmalý olmayacaksa ne gerek var yeni classa
+4-)derivedda tekrar fonksiyon tanýmlanabilir ama derived classa etki eder,base classýn privatelarýna
+eriþemez
+5-)derived class  yeniden tanýmlamaya gerek duymadan base classýn bütün üyelerine ulaþýr
+------------------------------------------26.10------------------------------------------
+14.SLAYT 20 SAYFADAN BAÞLIYOR
+#ifndef en baþa
+#endif en sona
+41.slayt son
+
+kimlik no protected
+ornek1.kimlikno=96 yazamazsýn
+ama ogr clasýnýn setlesi kimlimkno = 98 yapar
+ama miras olma yolu protected olursa bunu da yapamaz(?)
+---------------------------------------27.10-------------------------------------------
+constructorlar declare edildikleri sýrada çaðýrýlýr
+bir sýnýfýn özel bir hali ise miras
+aitlik iþi dönerse diðer class ait olduðu classa deðiþken olarak atanýr
+miras ile kompozisyon farkýna dikkat et 
+-----------------------------------------02.11--------------------------------------------
+15.slayt
+13KASIM 13.00 SINAV 8 DERSLÝK VAR 
+
+
+int*   p, q;  q burada deðiþken p pointer
+ pointer 4byte (32-bitte)
+
+&p=x; atamasý yapýlamaz
+
+malloca falan kendin bak
+
+new kullanýmý (bottan biliyorum Kappa)
+
+delete data; program bitmesini beklemeden ayrýlan yeri siler
+
+delete [] data; diziye ayrýlan yeri siler, [] içini doldurma 
+
+new den sonra baþlangýç deðer atamasý lazým yoksa initialize etmez 
+
+
+int* &p ---> referans parametre
+
+normalde referans verince gerçek deðer deðiþir 
+pointer da ise adresin kopyasý verilir adresin kopyasý üzerinden iþlem yapýlýr fonksiyon bitince 
+kopyalanan adress silinir
+
+referans olarak olunca dinamik bellek oluþturulduðunda fonksiyondan çýkýnca ulaþýlabilir 
+referans olmazsa o adrese dinamik bellek tahsis yapýldýpýnda fonksiyonda, çýkýnca o adrese ulaþýlamaz
+-----------------------------------03.11-------------------------------------------------------------
+deðiþikliklerin kalýtsal olmasý için pointer kullan
+shallow / deep copy
+referans deðiþkenler tanýlanýrken atama yapýlýr sonra yapýlamaz
+TAHTA.PNG LUL
+15 BÝTTÝ
+16 SEDAT HOCAYA LAZIM
+
+mutable deðiþkeni const bir fonksiyonda deðiþtirilebilir
+
+const use in c++ 
+ const int*const mymethod(const int*const&)const;
+
+---------------------------------GEÇMÝÞ SORU---------------------------------
+
+40 puanlýk~ ses, görüntü, video iþleyen veri gizlemeye uygun (ses 1 boyutlu, görüntü 2 boyutlu)
+
+sinyal1D sýnýfý max 10bin örneðe sahip bir dizi ve sinyal boyu bilgilerine sahiptir
+setSignal, baþlagýç ve bitiþ deðerlerini verilen sinyalin ortalamasýný veren bir fonk.,getBoyut
+printde ortalama ve boyu basýcak, default const.
+
+sinyal2D sýnýfý sinyal1'e benzemekle beraber en ve boy tutar fazladan
+
+(x,y)ortlama ve printte en boy olucak
+
+video sýnýfý 5 ses 5 görüntü deðiþkeninin birleþiminden oluþmuþtur ek olarak sýkýþtýrma fonk. var
+
+
+setle bunda da olucak
+sýkýþýtýrýlmýþ boyut da yazýlýr
+----------------------------------------------------------------------
+int *dizi;
+dizi= new int[] //bu constructor da olucak
+int **matris;
+matris = new int*[satýr]; T
+for(int i=0;i<satýr;i++)  |  ---- constructor da olucak
+matris[i]=new int[sutun];_|
+
+----------------------------------------------------------------------23.11------------------------------
+----------------------------------------------------------------------24.11------------------------------
+----------------------------------------------------------------------30.11------------------------------
+nesneler üzerinde iþlem yapmak için overload yaparýz
+= shallow copy
+-----------------------------------------------------------------------01.12--------------------------------
+stream instertion sadece friend function olarak overload edilir
+iki taraftan birisi farklý türe sahipse friend function olarak overload edilir
+-----------------------------------------------------------07.12-------------------------
+++/-- operatorlerini overload
+ karmaþýk sayý ödevini yap
+[] yap
+ödevde deep copy için = overload et
+= ve [] friend deðil deðil içinde olmalý
+
+newstringin diðer operatorlerini yap
+
+
+---------------------------14.12------------------------------
+template fonksiyo
+template sýnýf
+
+templatelere çalýþ sýkýntý çýkaracak gibi
+
+
+templatede herþey headera yazýlýyor
+ çeviri slaytýna bak iþte
+
+-------------------------15.12------------------------------
+polymorphism / çok biçimlilik(bu ne amk)
+
+
+deðerle çaðýrma olmuyor
+easily extensible 
+
+virtual olmazsa polymorhpism çalýþmaz, çalýþýr da çalýþmaz
+
+ya referans ya da pointer olmalý
+downcast yapabilmek için o nesnenin önceden upcast yapýlmýþ olmasý lazým ve tipler ayný olmalý
+downcast yaparken explicitcast lazým // zorla casting
+
+polymorphism - sözel soru gelebilir
+
+
+poly kalýtýmsýz ve virtualsýz düþünülemez
+
+polymorphism yapýlýrken ana sýnýfta gereksiz fonsksiyonu engeller
+
+
+
+
+UML yöntem
+
+dinamik baðlama 21.3.4 de yazýyor
+
+
+abstract sýnýf fonksiyonel olarak birþey ifade etmez ama üst ssýnýf olmalý
+
+virtual fonksiyonlar için ekstra alan tutulur (vtable)---> maliyet artar
+ dinamik baðlama
+129. slayt vtable + pointer yeri
+polymorphism = dynamic binding annadýn ;)
+
+
+polygon *p= new triangle up-cast
+rectangle *pRect = p down-cast bu þekilde bir downcast mümkün deðil
+güvenli down cast dynamic cast 
+virtual desc. kadar gelmiþ
+o slayt bitti bi okursun artýk
+
+
+
+constractor virtual olmaz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

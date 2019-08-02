@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1449958490 source:/home/sedat/KTU_OOP/OOP_examples/firstHomeWork/main.cpp
+	<iostream>
+	"cashRegister.h"
+	"Book.h"
+
+1449951946 source:/home/sedat/KTU_OOP/OOP_examples/firstHomeWork/src/Author.cpp
+	"Author.h"
+
+1449937097 /home/sedat/KTU_OOP/OOP_examples/firstHomeWork/include/Author.h
+	<iostream>
+	<string>
+
+1449956937 source:/home/sedat/KTU_OOP/OOP_examples/firstHomeWork/src/Book.cpp
+	"Book.h"
+
+1449956901 /home/sedat/KTU_OOP/OOP_examples/firstHomeWork/include/Book.h
+	"Author.h"
+	<iostream>
+	<string>
+
+1449952472 source:/home/sedat/KTU_OOP/OOP_examples/firstHomeWork/src/cashRegister.cpp
+	"cashRegister.h"
+
+1449951549 /home/sedat/KTU_OOP/OOP_examples/firstHomeWork/include/cashRegister.h
+	<iostream>
+	<string>
+

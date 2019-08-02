@@ -1,0 +1,14 @@
+You are asked to design a book store: 
+
+It will have an author class.
+It will have books that are written by authors.
+You will need to get books and authors lists and 
+Create a book store that can be searched based on book name, author name etc.
+You should be able to sell books so you will nedd a cash register.
+
+The assignment should be written in C++ using OOP design.
+
+You will be rewarded 10 points in the midterm examp, if you deliver a working copy to the instructor through bitbucket repository as a directorywith your  student number.
+
+Good luck
+

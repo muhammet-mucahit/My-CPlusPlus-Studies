@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1309778274 source:d:\video kursy en\c++\46. polymorphism, virtual functions, abstract classes\farm\main.cpp
+	<iostream>
+	"farm.h"
+
+1309778693 
+
+1309778693 d:\video kursy en\c++\46. polymorphism, virtual functions, abstract classes\farm\farm.h
+	<iostream>
+
+1309777890 source:d:\video kursy en\c++\46. polymorphism, virtual functions, abstract classes\farm\farm.cpp
+	"farm.h"
+
+1448199479 source:/home/sedat/KTU_OOP/OOP_examples/farm/main.cpp
+	<iostream>
+	"farm.h"
+
+1448199882 /home/sedat/KTU_OOP/OOP_examples/farm/farm.h
+	<iostream>
+	<string>
+
+1448199914 source:/home/sedat/KTU_OOP/OOP_examples/farm/farm.cpp
+	"farm.h"
+

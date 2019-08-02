@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1447430256 source:/home/sedat/KTU_OOP/OOP_examples/Pointers/Pointers/main.cpp
+	<iostream>
+
+1447431158 source:/home/sedat/KTU_OOP/OOP_examples/Pointers/Pointers/pointers.cpp
+	<iostream>
+

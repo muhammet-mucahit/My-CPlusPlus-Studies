@@ -1,0 +1,5 @@
+Galatasaray 15 5 5 60 20
+Fenerbahce 18 5 2 70 10
+Besiktas 20 2 3 70 5
+Trabzonspor 15 5 5 60 15
+Bursaspor 17 3 5 70 20  
